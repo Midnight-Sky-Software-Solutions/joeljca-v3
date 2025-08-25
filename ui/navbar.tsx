@@ -7,9 +7,9 @@ export default function NavBar() {
       <div className="flex max-w-6xl grow h-20 items-center px-3">
         <Link href="/" className={`font-mono text-3xl`}>
           Joel Johnston&nbsp;
-            <span aria-hidden="true">[</span>
+            <span aria-hidden="true">&lt;</span>
             <span className="text-cyan-500">Web Dev</span>
-            <span aria-hidden="true">]</span>
+            <span aria-hidden="true">/&gt;</span>
         </Link>
         <nav className="grow flex justify-center">
           <ul className="flex gap-8 text-2xl">
