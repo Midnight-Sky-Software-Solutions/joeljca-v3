@@ -14,12 +14,12 @@ export default function NavBar() {
         <nav className="grow flex justify-center">
           <ul className="flex gap-8 text-2xl">
             <li>
-              <Link href="/" className="text-blue-800">
+              <Link href="#services" className="text-blue-800">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-blue-800">
+              <Link href="#portfolio" className="text-blue-800">
                 Portfolio
               </Link>
             </li>
