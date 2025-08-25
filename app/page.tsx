@@ -1,6 +1,7 @@
+import Contact from "./contact";
 import Hero from "@/app/hero";
-import Services from "./services";
 import Portfolio from "./portfolio";
+import Services from "./services";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Portfolio />
+      <Contact />
     </div>
   );
 }

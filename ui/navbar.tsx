@@ -24,7 +24,7 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="text-blue-800">
+              <Link href="#contact" className="text-blue-800">
                 Contact
               </Link>
             </li>
