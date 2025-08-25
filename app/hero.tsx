@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div
-      className="bg-gray-500 bg-linear-to-b from-cyan-800 to-cyan-shade flex justify-center"
+      className="bg-linear-to-b from-cyan-800 to-cyan-shade flex justify-center"
     >
       <div className="flex max-w-6xl grow items-center px-32">
         <div className="grow">
@@ -18,7 +18,7 @@ export default function Hero() {
             alt="A picture of me (Joel)"
             width={327}
             height={327}
-            className="translate-y-1/2 rounded-full border-5 border-teal-700"
+            className="translate-y-1/4 rounded-full border-5 border-teal-700"
           />
         </div>
       </div>
