@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div className="flex justify-center">
       <div className="max-w-6xl grow items-center px-3 pt-12">
-        <h2 className="text-3xl font-serif pb-8">
+        <h2 className="text-4xl font-serif pb-8">
           My Services
         </h2>
         <div className="flex">
