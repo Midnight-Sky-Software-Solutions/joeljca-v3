@@ -11,21 +11,53 @@ const navItems = [
   { name: "Blog", href: "/" },
 ];
 
+const socialMediaItems = [
+  { name: "Upwork", image: "/Upwork.svg", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
+  { name: "LinkedIn", image: "/LinkedIn.svg", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
+  { name: "Email", image: "/eMail.svg", "href": "mailto:me@joelj.ca" },
+]
+
 function MobileNav() {
   
   const [isOpen, setIsOpen] = useState(false);
+  const navItemsWithHome = [
+    { name: "Home", href: "/" }
+  ].concat(navItems);
 
   return (
-    <header className="lg:hidden">
+    <header className="lg:hidden sticky top-0 z-10 bg-white border-1 border-warm-grey-700">
       {isOpen && 
       <div>
         <nav>
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+          <ul className="text-3xl">
+            {navItemsWithHome.map(item => (
+              <li key={item.name} className="text-center py-3">
+                <Link href={item.href}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
+        <div className="flex justify-center my-6">
+          <ul className="flex gap-12 display-block">
+            {socialMediaItems.map(item => (
+              <li key={item.name}>
+                <Link 
+                  href={item.href}
+                  target={item.href.startsWith("mailto") ? "" : "_blank"}
+                >
+                  <Image
+                    src={item.image}
+                    width={45}
+                    height={45}
+                    alt={item.name}
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
       }
       <div className="flex-row justify-items-center">
@@ -62,44 +94,21 @@ function DesktopNav() {
         </nav>
         <div>
           <ul className="flex gap-3">
-            <li>
-              <Link 
-                href="https://www.upwork.com/freelancers/~011f757c30fa5d1800"
-                target="_blank"
-              >
-                <Image
-                  src="/Upwork.svg"
-                  width={45}
-                  height={45}
-                  alt="Upwork"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.linkedin.com/in/joel-alexander-johnston/"
-                target="_blank"
-              >
-                <Image
-                  src="/LinkedIn.svg"
-                  width={45}
-                  height={45}
-                  alt="Upwork"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="mailto:me@joelj.ca"
-              >
-                <Image
-                  src="/eMail.svg"
-                  width={45}
-                  height={45}
-                  alt="Upwork"
-                />
-              </Link>
-            </li>
+            {socialMediaItems.map(item => (
+              <li key={item.name}>
+                <Link 
+                  href={item.href}
+                  target={item.href.startsWith("mailto") ? "" : "_blank"}
+                >
+                  <Image
+                    src={item.image}
+                    width={45}
+                    height={45}
+                    alt={item.name}
+                  />
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
