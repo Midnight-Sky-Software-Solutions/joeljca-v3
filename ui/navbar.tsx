@@ -2,7 +2,8 @@
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { name: "Services", href: "/#services" },
@@ -23,6 +24,12 @@ function MobileNav() {
   const navItemsWithHome = [
     { name: "Home", href: "/" }
   ].concat(navItems);
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams()
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname, searchParams]);
 
   return (
     <header className="lg:hidden sticky top-0 z-10 bg-white border-1 border-warm-grey-700">
