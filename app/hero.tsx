@@ -7,7 +7,7 @@ export default function Hero() {
     >
       <div className="flex flex-col max-w-6xl grow items-center px-8 sm:px-16 lg:px-32 lg:flex-row pt-12 lg:pt-0">
         <div className="grow">
-          <h2 className="text-white text-3xl font-serif text-center">Hi, I'm Joel 👋</h2>
+          <h2 className="text-white text-3xl font-serif text-center">Hi, I&apos;m Joel 👋</h2>
           <p className="text-white text-2xl mt-10">
             I build websites for small associations and other membership organizations.
           </p>
