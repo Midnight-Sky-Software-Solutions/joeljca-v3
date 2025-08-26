@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import NavBar from "@/ui/navbar";
 import { inconsolata, marvel } from "@/ui/fonts";
+import "./globals.css";
+import Footer from "@/ui/footer";
+import NavBar from "@/ui/navbar";
 
 export const metadata: Metadata = {
   title: "Websites for Small Associations | Joel Johnston",
@@ -20,6 +21,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
