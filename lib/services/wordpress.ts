@@ -1,4 +1,5 @@
-import { Posts } from "../model/wordpress";
+import { NotFoundError } from "../model/app-error";
+import { Post, Posts } from "../model/wordpress";
 
 const WP_API_URL = 'https://public-api.wordpress.com/rest/v1.1/sites/wp.joelj.ca';
 
@@ -8,4 +9,16 @@ export async function getPostsFromWordpress(page: number = 1, perPage: number = 
       posts: json.posts,
       totalPages: Number(res.headers.get('X-WP-TotalPages'))
     })));
+}
+
+export async function getPostFromWordpress(slug: string): Promise<Post | NotFoundError> {
+  return await fetch(`${WP_API_URL}/posts?slug=${slug}`)
+    .then(res => res.json())
+    .then(json => {
+      const posts = json.posts;
+      if (posts.length == 0) {
+        return new NotFoundError(`Post with slug ${slug} not found`);
+      }
+      return posts[0];
+    });
 }

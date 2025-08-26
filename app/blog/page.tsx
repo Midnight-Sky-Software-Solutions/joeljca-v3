@@ -1,5 +1,6 @@
 import { delay } from "@/lib/harness";
 import { getPostsFromWordpress } from "@/lib/services/wordpress";
+import Link from "next/link";
 import { Suspense } from "react";
 
 function formatDate(date: Date) {
@@ -19,7 +20,9 @@ function BlogPost(props: {
 }) {
   return (
     <article className="flex flex-col gap-3">
-      <h3 className="text-3xl font-serif text-blue-900">{props.title}</h3>
+      <Link href={`/blog/${props.slug}`}>
+        <h3 className="text-3xl font-serif text-blue-900">{props.title}</h3>
+      </Link>
       <div className="text-2xl text-warm-grey-600">{formatDate(props.date)}</div>
       <div className="text-2xl text-warm-grey-800" dangerouslySetInnerHTML={{__html: props.preview}}></div>
     </article>
