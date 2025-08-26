@@ -80,7 +80,7 @@ function MobileNav() {
 
 function StubMobileNav() {
   return (
-    <header>
+    <header className="lg:hidden sticky top-0 z-10 bg-white border-1 border-warm-grey-700">
       <div className="flex-row justify-items-center">
         <div className="flex items-center">
           <Bars3Icon />
