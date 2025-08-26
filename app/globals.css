@@ -26,3 +26,23 @@ body {
   color: var(--foreground);
   font-family: Marvel, Helvetica, sans-serif;
 }
+
+@layer base {
+  h2 {
+    font-size: var(--text-4xl);
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .full-width-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-width-full {
+    max-width: var(--container-6xl);
+    padding-left: --spacing(3);
+    padding-right: --spacing(3);
+  }
+}

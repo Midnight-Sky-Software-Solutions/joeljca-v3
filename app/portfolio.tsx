@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Portfolio() {
   return (
-    <div className="flex justify-center" id="portfolio">
-      <div className="max-w-6xl grow items-center px-3 pt-12">
-        <h2 className="text-4xl font-serif pb-8">
+    <div className="full-width-container" id="portfolio">
+      <div className="content-width-full pt-12">
+        <h2 className="pb-8">
           Portfolio
         </h2>
         <div className="flex">
