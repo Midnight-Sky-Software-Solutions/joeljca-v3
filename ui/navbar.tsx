@@ -9,7 +9,7 @@ const navItems = [
   { name: "Services", href: "/#services" },
   { name: "Portfolio", href: "/#portfolio" },
   { name: "Contact", href: "/#contact" },
-  { name: "Blog", href: "/" },
+  { name: "Blog", href: "/blog" },
 ];
 
 const socialMediaItems = [
