@@ -1,3 +1,4 @@
+import { delay } from "@/lib/harness";
 import { getPostsFromWordpress } from "@/lib/services/wordpress";
 import { Suspense } from "react";
 
@@ -20,7 +21,17 @@ function BlogPost(props: {
     <article className="flex flex-col gap-3">
       <h3 className="text-3xl font-serif text-blue-900">{props.title}</h3>
       <div className="text-2xl text-warm-grey-600">{formatDate(props.date)}</div>
-      <p className="text-2xl text-warm-grey-800" dangerouslySetInnerHTML={{__html: props.preview}}></p>
+      <div className="text-2xl text-warm-grey-800" dangerouslySetInnerHTML={{__html: props.preview}}></div>
+    </article>
+  );
+}
+
+function BlogPostSkeleton() {
+  return (
+    <article className="flex flex-col gap-3">
+      <h3 className="text-3xl font-serif text-blue-900 w-full bg-gray-300 animate-pulse">&nbsp;</h3>
+      <div className="text-2xl text-warm-grey-600 w-full bg-gray-300 animate-pulse">&nbsp;</div>
+      <div className="text-2xl text-warm-grey-800 w-full bg-gray-300 animate-pulse"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
     </article>
   );
 }
@@ -28,6 +39,7 @@ function BlogPost(props: {
 async function BlogRoll({ page }: { page: number }) {
 
   const posts = await getPostsFromWordpress(page);
+  // await delay(5000)
 
   return (
     <div className="flex flex-col gap-12">
@@ -44,12 +56,23 @@ async function BlogRoll({ page }: { page: number }) {
   );
 }
 
+function BlogRollSkeleton() {
+  const mockPosts = [1, 2, 3];
+  return (
+    <div className="flex flex-col gap-12">
+      {mockPosts.map(post => (
+        <BlogPostSkeleton key={post} />
+      ))}
+    </div>
+  );
+}
+
 export default function Blog() {
   return (
     <div className="full-width-container pb-14">
       <div className="content-width-full">
         <h2 className="py-10">Blog</h2>
-        <Suspense>
+        <Suspense fallback={<BlogRollSkeleton />}>
           <BlogRoll page={1} />
         </Suspense>
       </div>
