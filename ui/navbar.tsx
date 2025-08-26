@@ -3,7 +3,7 @@ import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 const navItems = [
   { name: "Services", href: "/#services" },
@@ -78,6 +78,18 @@ function MobileNav() {
   );
 }
 
+function StubMobileNav() {
+  return (
+    <header>
+      <div className="flex-row justify-items-center">
+        <div className="flex items-center">
+          <Bars3Icon />
+        </div>
+      </div>
+    </header>
+  )
+}
+
 function DesktopNav() {
   return (
     <header className="justify-center drop-shadow-md	bg-white hidden lg:flex">
@@ -126,7 +138,9 @@ function DesktopNav() {
 export default function NavBar() {
   return (
     <>
-      <MobileNav />
+      <Suspense fallback={<StubMobileNav />}>
+        <MobileNav />
+      </Suspense>
       <DesktopNav />
     </>
   );
