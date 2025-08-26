@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function Services() {
   return (
     <div className="full-width-container" id="services">
-      <div className="content-width-full pt-12">
+      <div className="content-width-full pt-14">
         <h2 className="pb-8">
           My Services
         </h2>
-        <div className="flex">
-          <div className="w-128 flex-none">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
+          <div className="lg:w-128 flex-none">
             <Image
               src="/services.png"
               alt="A computer and a headset"
