@@ -1,9 +1,47 @@
+"use client"
+import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function NavBar() {
+const navItems = [
+  { name: "Services", href: "/#services" },
+  { name: "Portfolio", href: "/#portfolio" },
+  { name: "Contact", href: "/#contact" },
+  { name: "Blog", href: "/" },
+];
+
+function MobileNav() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="flex justify-center drop-shadow-md	bg-white">
+    <header className="lg:hidden">
+      {isOpen && 
+      <div>
+        <nav>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+          </ul>
+        </nav>
+      </div>
+      }
+      <div className="flex-row justify-items-center">
+        <div className="flex items-center">
+          <button onClick={() => setIsOpen(!isOpen)} className="w-10">
+            <Bars3Icon />
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function DesktopNav() {
+  return (
+    <header className="justify-center drop-shadow-md	bg-white hidden lg:flex">
       <div className="flex max-w-6xl grow h-20 items-center px-3">
         <Link href="/" className={`font-mono text-3xl`}>
           Joel Johnston&nbsp;
@@ -13,26 +51,13 @@ export default function NavBar() {
         </Link>
         <nav className="grow flex justify-center">
           <ul className="flex gap-8 text-2xl">
-            <li>
-              <Link href="#services" className="text-blue-800">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="#portfolio" className="text-blue-800">
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link href="#contact" className="text-blue-800">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="text-blue-800">
-                Blog
-              </Link>
-            </li>
+            {navItems.map(item => (
+              <li key={item.name}>
+                <Link href={item.href} className="text-blue-800">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div>
@@ -79,5 +104,14 @@ export default function NavBar() {
         </div>
       </div>
     </header>
+  );
+}
+
+export default function NavBar() {
+  return (
+    <>
+      <MobileNav />
+      <DesktopNav />
+    </>
   );
 }
