@@ -18,13 +18,13 @@ export default function Services() {
           </div>
           
           <div
-            className="grow text-2xl space-y-2"
+            className="grow text-2xl space-y-3"
           >
             <p>Are you a small association, club, chamber, or chapter looking to build a professional and engaging website for your members and the public?</p>
             <p>With expertise in <b>Wild Apricot</b> and modern web technologies like <b>Next.js</b>, I specialize in creating fast, user-friendly, and highly functional websites tailored specifically for membership-based organizations.</p>
             <p>I can help you deliver a seamless digital experience that keeps your members engaged and your operations running smoothly.</p>
             <h3><b>What I Offer:</b></h3>
-            <ul className="list-disc">
+            <ul className="list-disc list-inside">
               <li>Custom website design tailored for associations and clubs</li>
               <li>Wild Apricot (or other AMS) integration and configuration</li>
               <li>Lightning-fast performance using Next.js</li>
