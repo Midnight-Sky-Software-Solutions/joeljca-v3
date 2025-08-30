@@ -17,11 +17,23 @@ export default function Services() {
             />
           </div>
           
-          <p
-            className="grow text-2xl"
+          <div
+            className="grow text-2xl space-y-2"
           >
-            With expertise in Wild Apricot, I help small membership organizations build engaging websites for their members and the public. I leverage the modern web framework Next.js to ensure fast load times and excellent overall user experience. I can seamlessly integrate with Content Management Systems, Payment Gateways, Database Management Systems, and other software services as needed by the project.
-          </p>
+            <p>Are you a small association, club, chamber, or chapter looking to build a professional and engaging website for your members and the public?</p>
+            <p>With expertise in <b>Wild Apricot</b> and modern web technologies like <b>Next.js</b>, I specialize in creating fast, user-friendly, and highly functional websites tailored specifically for membership-based organizations.</p>
+            <p>I can help you deliver a seamless digital experience that keeps your members engaged and your operations running smoothly.</p>
+            <h3><b>What I Offer:</b></h3>
+            <ul className="list-disc">
+              <li>Custom website design tailored for associations and clubs</li>
+              <li>Wild Apricot (or other AMS) integration and configuration</li>
+              <li>Lightning-fast performance using Next.js</li>
+              <li>Seamless integration with Content Management Systems, Payment Gateways, Database Management Systems, and Third-party services (as needed)</li>
+            </ul>
+            <h3><b>Why Choose Me?</b></h3>
+            <p>I understand the unique needs of membership-based organizations and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.</p>
+            <p>Lets build a website that reflects your mission, engages your members, and simplifies your operations!</p>
+          </div>
         </div>
       </div>
     </div>
