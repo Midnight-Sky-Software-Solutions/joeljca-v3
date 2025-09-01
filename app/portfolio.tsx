@@ -15,7 +15,8 @@ export default function Portfolio() {
               An association website built with React and Wild Apricot. This Proof of Concept demonstrate a Next.js application integrating with WildApricot and WordPress by consuming their respective Web APIs. The major technical challenge was implementing Single Sign On with WildApricot.
             </p>
             <Link
-              href=""
+              href="https://demo.joelj.ca"
+              target="_blank"
               className="bg-cyan-500 text-white text-2xl px-3 py-2 rounded-lg"
             >
               Visit
