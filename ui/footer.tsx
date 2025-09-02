@@ -1,3 +1,5 @@
+import MailingListSignup from "./mailing-list-signup";
+
 export default function Footer() {
   return (
     <footer className="flex justify-center drop-shadow-md	bg-cyan-700">
@@ -8,7 +10,10 @@ export default function Footer() {
         </div>
         <div></div>
         <div></div>
-        <div></div>
+        <div>
+          <p className="text-lg font-bold">Subscribe to my mailing list</p>
+          <MailingListSignup />
+        </div>
       </div>
     </footer>
   )
