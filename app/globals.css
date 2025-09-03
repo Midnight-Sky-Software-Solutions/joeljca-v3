@@ -36,6 +36,16 @@ body {
     font-size: var(--text-4xl);
     font-family: var(--font-serif);
   }
+
+  h3 {
+    font-size: var(--text-3xl);
+    font-family: var(--font-serif);
+  }
+
+  h4 {
+    font-size: var(--text-2xl);
+    font-family: var(--font-serif);
+  }
 }
 
 @layer components {
