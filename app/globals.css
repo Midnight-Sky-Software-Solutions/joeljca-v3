@@ -46,6 +46,14 @@ body {
     font-size: var(--text-2xl);
     font-family: var(--font-serif);
   }
+
+  article {
+    ul {
+      list-style: disc;
+      list-style-position: inside;
+    }
+  }
+  
 }
 
 @layer components {
