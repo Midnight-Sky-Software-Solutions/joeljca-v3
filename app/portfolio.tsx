@@ -24,11 +24,11 @@ export default function Portfolio() {
           </div>
           <div className="lg:w-128 flex-none">
             <Image
-              src="/ahpc.png"
+              src="/mockuuups-macbook-pro-mockup.jpg"
               alt="A computer and a headset"
-              width={466}
-              height={349}
-              className="lg:float-right"
+              width={1500}
+              height={2000}
+              className="lg:float-right rounded-lg"
             />
           </div>
         </div>
