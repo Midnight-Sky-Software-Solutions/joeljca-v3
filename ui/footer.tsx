@@ -11,7 +11,7 @@ export default function Footer() {
         <div></div>
         <div></div>
         <div>
-          <p className="text-lg font-bold">Subscribe to my mailing list</p>
+          <p className="text-2xl font-bold">✉️ Subscribe to my mailing list</p>
           <MailingListSignup />
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function MailingListSignup() {
   return (
-    <div id="mc_embed_shell">
+    <div id="mc_embed_shell" className="text-lg">
 
       <div id="mc_embed_signup">
         <form action="https://joelj.us17.list-manage.com/subscribe/post?u=c46f03c7a836863925e73b063&amp;id=3c5087667e&amp;f_id=00ea4ae0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_self" noValidate>
@@ -15,7 +15,7 @@ export default function MailingListSignup() {
             </div>
             <div className="optionalParent">
               <div className="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="bg-cyan-500 text-white text-md px-2 py-1 rounded-lg" />
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="bg-blue-500 text-white text-md px-2 py-1 rounded-lg" />
               </div>
             </div>
           </div>
