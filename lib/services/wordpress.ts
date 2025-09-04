@@ -12,13 +12,13 @@ export async function getPostsFromWordpress(page: number = 1, perPage: number = 
 }
 
 export async function getPostFromWordpress(slug: string): Promise<Post | NotFoundError> {
-  return await fetch(`${WP_API_URL}/posts?slug=${slug}`)
+  return await fetch(`${WP_API_URL}/posts/slug:${slug}`)
     .then(res => res.json())
     .then(json => {
-      const posts = json.posts;
-      if (posts.length == 0) {
-        return new NotFoundError(`Post with slug ${slug} not found`);
+      console.log(json);
+      if (json.error == 'unknown_post') {
+        return new NotFoundError(json.message);
       }
-      return posts[0];
+      return json;
     });
 }
