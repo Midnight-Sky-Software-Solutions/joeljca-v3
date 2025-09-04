@@ -52,6 +52,16 @@ body {
       list-style: disc;
       list-style-position: inside;
     }
+
+    a {
+      color: var(--color-blue-800);
+      text-decoration: underline;
+    }
+
+    .aligncenter {
+      display: flex;
+      justify-content: center;
+    }
   }
   
 }
