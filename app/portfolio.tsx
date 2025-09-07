@@ -5,12 +5,12 @@ export default function Portfolio() {
   return (
     <div className="full-width-container" id="portfolio">
       <div className="content-width-full pt-12">
-        <h2 className="pb-8 text-4xl">
+        <h2 className="pb-8 text-4xl font-serif">
           Portfolio
         </h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
           <div className="grow ">
-            <h3 className="text-3xl pb-8">The Association of Home Pizza Cooks</h3>
+            <h3 className="text-3xl pb-8 font-serif">The Association of Home Pizza Cooks</h3>
             <p className="text-2xl pb-8">
               This proof of concept showcases an association website built with React and Wild Apricot. It demonstrates how a Next.js application can integrate with both WildApricot and WordPress through their respective web APIs. The primary technical challenge addressed was implementing single sign-on (SSO) with WildApricot.
             </p>

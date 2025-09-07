@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inconsolata, marvel } from "@/ui/fonts";
+import { inriaSerif, inconsolata, marvel } from "@/ui/fonts";
 import "./globals.css";
 import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${marvel.variable} ${inconsolata.variable} antialiased`}
+        className={`${marvel.variable} ${inconsolata.variable} ${inriaSerif.variable} antialiased`}
       >
         <NavBar />
         {children}
