@@ -17,8 +17,8 @@ export default async function BlogPost({
     return (
       <div className="full-width-container pb-14">
         <div className="content-width-full">
-          <h2 className="py-10">{post.title}</h2>
-          <article className="flex flex-col gap-5 text-2xl" dangerouslySetInnerHTML={{__html: post.content}}></article>
+          <h2 className="py-10 text-4xl px-20">{post.title}</h2>
+          <article className="px-20 flex flex-col gap-5 text-2xl" dangerouslySetInnerHTML={{__html: post.content}}></article>
         </div>
       </div>
     );
