@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="grow">
           <h2 className="text-white text-3xl font-serif text-center">Hi, I&apos;m Joel 👋</h2>
           <p className="text-white text-2xl mt-10">
-            Modern websites for associations—fast, secure, member-focused
+            I build modern websites for associations—fast, secure, and member-focused
           </p>
         </div>
         <div>
