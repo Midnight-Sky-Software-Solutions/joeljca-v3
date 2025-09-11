@@ -8,7 +8,7 @@ export default function Portfolio() {
         <h2 className="pb-8 text-4xl font-serif">
           Portfolio
         </h2>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-5">
           <div className="grow ">
             <h3 className="text-3xl pb-8 font-serif">The Association of Home Pizza Cooks</h3>
             <p className="text-2xl pb-8">
