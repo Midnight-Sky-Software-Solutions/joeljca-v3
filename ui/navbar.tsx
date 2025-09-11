@@ -8,7 +8,7 @@ import { Suspense, useEffect, useState } from "react";
 const navItems = [
   { name: "Services", href: "/#services" },
   { name: "Portfolio", href: "/#portfolio" },
-  { name: "Contact", href: "/#contact" },
+  { name: "Contact", href: "/contact" },
   { name: "Blog", href: "/blog" },
 ];
 
