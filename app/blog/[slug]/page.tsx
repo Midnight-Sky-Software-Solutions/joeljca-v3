@@ -1,11 +1,12 @@
 import { NotFoundError } from "@/lib/model/app-error";
 import { getPostFromWordpress } from "@/lib/services/wordpress";
+import { Metadata } from "next";
 
-export default async function BlogPost({
-  params,
-}: {
+type Props = {
   params: Promise<{ slug: string }>
-}) {
+}
+
+export default async function BlogPost({ params }: Props) {
 
   const post = await getPostFromWordpress((await params).slug);
 
@@ -23,4 +24,21 @@ export default async function BlogPost({
       </div>
     );
   }
+}
+
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+
+  const post = await getPostFromWordpress((await params).slug);
+
+  if (post instanceof NotFoundError) {
+    return ({
+      title: 'Post Not Found | Joel Johnston'
+    });
+  }
+
+  return ({
+    title: post.title +  ' | Joel Johnston'
+  })
 }

@@ -15,7 +15,6 @@ export async function getPostFromWordpress(slug: string): Promise<Post | NotFoun
   return await fetch(`${WP_API_URL}/posts/slug:${slug}`)
     .then(res => res.json())
     .then(json => {
-      console.log(json);
       if (json.error == 'unknown_post') {
         return new NotFoundError(json.message);
       }
