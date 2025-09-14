@@ -19,22 +19,22 @@ function BlogPost(props: {
   preview: string
 }) {
   return (
-    <article className="flex flex-col gap-3">
+    <article className="flex flex-col">
       <Link href={`/blog/${props.slug}`}>
-        <h3 className="text-3xl font-serif text-blue-900">{props.title}</h3>
+        <h3 className="text-2xl font-serif text-blue-900">{props.title}</h3>
       </Link>
-      <div className="text-2xl text-warm-grey-600">{formatDate(props.date)}</div>
-      <div className="text-2xl text-warm-grey-800" dangerouslySetInnerHTML={{__html: props.preview}}></div>
+      <div className="text-xl text-warm-grey-600">{formatDate(props.date)}</div>
+      <div className="text-xl text-warm-grey-800" dangerouslySetInnerHTML={{__html: props.preview}}></div>
     </article>
   );
 }
 
 function BlogPostSkeleton() {
   return (
-    <article className="flex flex-col gap-3">
-      <h3 className="text-3xl font-serif text-blue-900 w-full bg-gray-300 animate-pulse">&nbsp;</h3>
-      <div className="text-2xl text-warm-grey-600 w-full bg-gray-300 animate-pulse">&nbsp;</div>
-      <div className="text-2xl text-warm-grey-800 w-full bg-gray-300 animate-pulse"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+    <article className="flex flex-col">
+      <h3 className="text-2xl font-serif text-blue-900 w-full bg-gray-300 animate-pulse">&nbsp;</h3>
+      <div className="text-xl text-warm-grey-600 w-full bg-gray-300 animate-pulse">&nbsp;</div>
+      <div className="text-xl text-warm-grey-800 w-full bg-gray-300 animate-pulse"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
     </article>
   );
 }
