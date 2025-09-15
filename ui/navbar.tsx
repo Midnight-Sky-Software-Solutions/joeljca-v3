@@ -1,9 +1,11 @@
 "use client"
+import * as motion from "motion/react-client";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
+import { AnimatePresence } from "motion/react";
 
 const navItems = [
   { name: "Services", href: "/#services" },
@@ -32,9 +34,12 @@ function MobileNav() {
   }, [pathname, searchParams]);
 
   return (
-    <header className="lg:hidden sticky top-0 z-10 bg-white border-1 border-warm-grey-700">
-      {isOpen && 
-      <div>
+    <header className="bg-white lg:hidden sticky top-0 z-10 border-1 border-warm-grey-700">
+      {isOpen &&
+      <motion.div
+        initial={{ y: -300 }}
+        animate={{ y: 0 }}
+      >
         <nav>
           <ul className="text-3xl">
             {navItemsWithHome.map(item => (
@@ -65,7 +70,7 @@ function MobileNav() {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
       }
       <div className="flex-row justify-items-center">
         <div className="flex items-center">
