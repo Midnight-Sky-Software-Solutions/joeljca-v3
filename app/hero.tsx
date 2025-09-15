@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
 
 export default function Hero() {
@@ -6,12 +7,16 @@ export default function Hero() {
       className="bg-linear-to-b from-cyan-800 to-cyan-shade flex justify-center"
     >
       <div className="flex flex-col max-w-6xl grow items-center px-8 sm:px-16 lg:px-32 lg:flex-row pt-12 lg:pt-0">
-        <div className="grow">
+        <motion.div 
+          className="grow"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
           <h2 className="text-white text-3xl font-serif text-center">Hi, I&apos;m Joel 👋</h2>
           <p className="text-white text-2xl mt-10">
             I build modern websites for associations—fast, secure, and member-focused
           </p>
-        </div>
+        </motion.div>
         <div>
           <Image
             src="/moi.jpg"

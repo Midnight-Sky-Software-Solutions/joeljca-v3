@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,9 +34,15 @@ export default function Services() {
             </ul>
             <h3 className="font-serif">Why Choose Me?</h3>
             <p>I understand the unique needs of membership-based organizations and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.</p>
-            <p className="text-center text-cyan-600 font-bold py-3 text-3xl">
-              <Link href="/contact">👉 Lets build a website that reflects your mission, engages your members, and simplifies your operations!</Link>
-            </p>
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-center text-cyan-600 font-bold py-3 text-3xl">
+                <Link href="/contact">👉 Lets build a website that reflects your mission, engages your members, and simplifies your operations!</Link>
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>
