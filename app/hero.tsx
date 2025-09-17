@@ -14,7 +14,7 @@ export default function Hero() {
         >
           <h2 className="text-white text-3xl font-serif text-center">Hi, I&apos;m Joel 👋</h2>
           <p className="text-white text-2xl mt-10">
-            I build modern websites for associations—fast, secure, and member-focused
+            I build membership websites that convert visitors into engaged members
           </p>
         </motion.div>
         <div>
