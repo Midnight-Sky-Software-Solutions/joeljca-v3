@@ -12,7 +12,8 @@ export default function Portfolio() {
           <div className="grow ">
             <h3 className="text-3xl pb-8 font-serif">The Association of Home Pizza Cooks</h3>
             <p className="text-xl pb-8">
-              This proof of concept showcases an association website built with React and Wild Apricot. It demonstrates how a Next.js application can integrate with both WildApricot and WordPress through their respective web APIs. The primary technical challenge addressed was implementing single sign-on (SSO) with WildApricot.
+              This proof of concept showcases an association website built with React and Wild Apricot. It demonstrates how a Next.js application can integrate with both WildApricot and WordPress to enable
+              snappy load speed and intuitive UI/UX. The outcome is more signups, better engagement, and improved retention.
             </p>
             <div className="flex gap-3">
               <Link
@@ -54,7 +55,7 @@ export default function Portfolio() {
             <h3 className="text-3xl pb-8 font-serif">The Society of Association Technology Professionals</h3>
             <p className="text-xl pb-8">
               This demo project demonstrates how a powerful association website can be built without an AMS. In this proof of concept, I integrate Auth0, HubSpot, Contentful and Stripe to build an engaging web experience 
-              that serves both members and the public.
+              that serves both members and the public. It demonstrates how an intuitive checkout process helps turn prospects into members.
             </p>
             <div className="flex gap-3">
               <Link
