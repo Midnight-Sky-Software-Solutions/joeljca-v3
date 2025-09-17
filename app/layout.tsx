@@ -6,8 +6,8 @@ import NavBar from "@/ui/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Websites for Small Associations | Joel Johnston",
-  description: "Modern websites for associations—fast, secure, member-focused",
+  title: "Membership Website Developemnt | Joel Johnston",
+  description: "Modern websites that convert visitors into members",
 };
 
 export default function RootLayout({

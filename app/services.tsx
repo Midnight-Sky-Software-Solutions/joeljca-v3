@@ -22,9 +22,10 @@ export default function Services() {
           <div
             className="grow text-xl space-y-3"
           >
-            <p>Are you a small association, club, chamber, or chapter looking to build a professional and engaging website for your members and the public?</p>
-            <p>With expertise in <b>WordPress</b> and modern web technologies like <b>Next.js</b>, I specialize in creating fast, user-friendly, and highly functional websites tailored specifically for membership-based organizations.</p>
-            <p>I can help you deliver a seamless digital experience that keeps your members engaged and your operations running smoothly.</p>
+            <p>
+              Struggling to grow your small association, club, chamber, or chapter?
+              I can help you <strong>convert your website visitors into members</strong> by fixing the friction points that cause drop-offs — from clunky sign-ups to outdated renewals.
+            </p>
             <h3 className="font-serif">What I Offer:</h3>
             <ul className="list-disc list-inside">
               <li>Custom website design tailored for associations and clubs</li>
@@ -33,14 +34,16 @@ export default function Services() {
               <li>Seamless integration with Content Management Systems, Payment Gateways, Database Management Systems, and Third-party services (as needed)</li>
             </ul>
             <h3 className="font-serif">Why Choose Me?</h3>
-            <p>I understand the unique needs of membership-based organizations and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.</p>
+            <p>
+              I understand the unique needs of membership-based organizations and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.
+            </p>
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
             >
               <p className="text-center text-cyan-600 font-bold py-3 text-3xl">
-                <Link href="/contact">👉 Lets build a website that reflects your mission, engages your members, and simplifies your operations!</Link>
+                <Link href="/contact">👉 Lets build a website that grows your membership and drives engagement!</Link>
               </p>
             </motion.div>
           </div>
