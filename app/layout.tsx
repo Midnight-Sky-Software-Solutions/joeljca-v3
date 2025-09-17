@@ -6,7 +6,7 @@ import NavBar from "@/ui/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Membership Website Developemnt | Joel Johnston",
+  title: "Membership Website Development | Joel Johnston",
   description: "Modern websites that convert visitors into members",
 };
 
