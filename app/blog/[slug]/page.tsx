@@ -1,5 +1,5 @@
 import { NotFoundError } from "@/lib/model/app-error";
-import { getPostFromWordpress } from "@/lib/services/wordpress";
+import { getPostFromWordpress, getPostsFromWordpress } from "@/lib/services/wordpress";
 import { Metadata } from "next";
 
 type Props = {
@@ -41,4 +41,9 @@ export async function generateMetadata(
   return ({
     title: post.title +  ' | Joel Johnston'
   })
+}
+
+export async function generateStaticParams() {
+  const posts = await getPostsFromWordpress(1, 1000);
+  return posts.posts.map(post => ({ slug: post.slug }));
 }
