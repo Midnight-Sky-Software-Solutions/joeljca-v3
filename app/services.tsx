@@ -23,19 +23,18 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              Struggling to grow your small association, club, chamber, or chapter?
+              Struggling to grow your small association, club or subscription service?
               I can help you <strong>convert your website visitors into members</strong> by fixing the friction points that cause drop-offs — from clunky sign-ups to outdated renewals.
             </p>
             <h3 className="font-serif">What I Offer:</h3>
             <ul className="list-disc list-inside">
-              <li>Custom website design tailored for associations and clubs</li>
-              <li>AMS integration and configuration</li>
+              <li>Custom website design that engages visitors</li>
               <li>Lightning-fast performance using Next.js</li>
               <li>Seamless integration with Content Management Systems, Payment Gateways, Database Management Systems, and Third-party services (as needed)</li>
             </ul>
             <h3 className="font-serif">Why Choose Me?</h3>
             <p>
-              I understand the unique needs of membership-based organizations and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.
+              I understand the unique needs of membership-based businesses and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.
             </p>
             <motion.div
               initial={{ scale: 0 }}
