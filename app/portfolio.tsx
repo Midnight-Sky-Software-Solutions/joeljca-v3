@@ -9,15 +9,6 @@ export default function Portfolio() {
           Portfolio
         </h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5">
-          <div className="lg:w-128 flex-none">
-            <Image
-              src="/mockuuups-satp.jpg"
-              alt="A computer and a headset"
-              width={1500}
-              height={2000}
-              className="lg:float-right rounded-lg"
-            />
-          </div>
           <div className="grow ">
             <h3 className="text-3xl pb-8 font-serif">The Society of Association Technology Professionals</h3>
             <p className="text-xl pb-8">
@@ -33,6 +24,15 @@ export default function Portfolio() {
                 Visit
               </Link>
             </div>
+          </div>
+          <div className="lg:w-128 flex-none">
+            <Image
+              src="/mockuuups-satp.jpg"
+              alt="A computer and a headset"
+              width={1500}
+              height={2000}
+              className="lg:float-right rounded-lg"
+            />
           </div>
         </div>
       </div>
