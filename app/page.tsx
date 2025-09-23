@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Hero />
       <Services />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Experience />
       <Contact />
     </div>
