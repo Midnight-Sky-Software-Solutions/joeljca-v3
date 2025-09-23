@@ -14,7 +14,7 @@ export default function Hero() {
         >
           <h2 className="text-white text-3xl font-serif text-center">Hi, I&apos;m Joel 👋</h2>
           <p className="text-white text-2xl mt-10">
-            I build engaging subscription websites that convert visitors into paying members
+            I help SaaS companies build robust web applications with React, ASP.NET and SQL Server.
           </p>
         </motion.div>
         <div>
