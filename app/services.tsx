@@ -23,19 +23,14 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              Struggling to grow your small association, club or subscription service?
-              I can help you <strong>convert your website visitors into members</strong> by fixing the friction points that cause drop-offs — from clunky sign-ups to outdated renewals.
+              With nearly a decade of professional development experience, I specialize in creating software that balances <strong>performance, maintainability, and user experience</strong>. Whether you&apos;re building a new product from scratch or scaling an existing platform, I bring expertise in:
             </p>
-            <h3 className="font-serif">What I Offer:</h3>
             <ul className="list-disc list-inside">
-              <li>Custom website design that engages visitors</li>
-              <li>Lightning-fast performance using Next.js</li>
-              <li>Seamless integration with Content Management Systems, Payment Gateways, Database Management Systems, and Third-party services (as needed)</li>
+              <li><strong>Frontend development with React</strong> → building modern, responsive, and intuitive UIs that delight users.</li>
+              <li><strong>Backend development with ASP.NET</strong> → designing secure, scalable APIs and business logic that grow with your product.</li>
+              <li><strong>Database design with SQL Server</strong> → ensuring reliable data storage, reporting, and high-performance queries.</li>
             </ul>
-            <h3 className="font-serif">Why Choose Me?</h3>
-            <p>
-              I understand the unique needs of membership-based businesses and provide scalable, easy-to-manage solutions that support both public-facing content and member-only areas.
-            </p>
+            <p>I partner with SaaS founders and product teams who need a developer that not only writes clean code, but also <strong>understands product goals, user needs, and business impact.</strong></p>
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
