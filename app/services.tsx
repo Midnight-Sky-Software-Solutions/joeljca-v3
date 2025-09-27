@@ -23,21 +23,24 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              With nearly a decade of professional development experience, I specialize in creating software that balances <strong>performance, maintainability, and user experience</strong>. Whether you&apos;re building a new product from scratch or scaling an existing platform, I bring expertise in:
+              Your team relies on <strong>SQL Server and ASP.NET</strong> for reliable backends, but your frontend lags behind in usability, performance and modern standards. That&apos;s where I come. I can help you:
             </p>
             <ul className="list-disc list-inside">
-              <li><strong>Frontend development with React</strong> → building modern, responsive, and intuitive UIs that delight users.</li>
-              <li><strong>Backend development with ASP.NET</strong> → designing secure, scalable APIs and business logic that grow with your product.</li>
-              <li><strong>Database design with SQL Server</strong> → ensuring reliable data storage, reporting, and high-performance queries.</li>
+              <li>Deliver responsive, accessible, and intuitive interfaces that today&apos;s users expect.</li>
+              <li>Leverage SSR and SSG for blazing-fast application performance.</li>
+              <li>Adopt best practices for version control, build, and deployment.</li>
+              <li>Integrate with Identity Providers for a seamless login and registration experience.</li>
+              <li>Leverage code generation to keep your frontend in sync with your backend.</li>
+              <li>Secure your application with ironclad authentication and authorization.</li>
             </ul>
-            <p>I partner with SaaS founders and product teams who need a developer that not only writes clean code, but also <strong>understands product goals, user needs, and business impact.</strong></p>
+            <p>I partner with <strong>.NET shops and enterprise IT leaders</strong> who want the best of both worlds: the stability of ASP.NET with the flexibility and speed of Next.js.</p>
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
             >
               <p className="text-center text-cyan-600 font-bold py-3 text-3xl">
-                <Link href="/contact">👉 Lets build a website that grows your membership and drives engagement!</Link>
+                <Link href="/contact">👉 Let me take the confusion out of modern web frameworks!</Link>
               </p>
             </motion.div>
           </div>

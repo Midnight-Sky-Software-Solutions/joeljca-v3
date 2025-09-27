@@ -11,8 +11,8 @@ export default function Experience() {
               I received my undergraduate Degree from the University of Alberta where I graduated with a Major in Computing Science and a Minor in Philosophy.
             </p>
             <p>
-              I have been working professionally in Software Development since 2016, with the past six years being focused on associations.
-              During that time, I&apos;ve helped membership organizations modernize their websites, streamline processes, and integrate AMS, CMS and LMS platforms to create smoother experiences for both staff and members.
+              I have been working professionally in Software Development since 2016, focusing on the .NET ecosystem.
+              During this time, I&apos;ve helped enterprise organizations modernize their websites, streamline processes, and integrate CRM platforms to create smoother end user experiences.
             </p>
           </div>
         </div>
