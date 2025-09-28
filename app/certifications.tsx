@@ -1,4 +1,3 @@
-
 export default function Certifications() {
   return (
     <div className="flex-row align-center justify-items-center px-3" id="contact">
