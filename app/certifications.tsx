@@ -1,7 +1,7 @@
 
 export default function Certifications() {
   return (
-    <div className="flex-row align-center justify-items-center py-16 px-3" id="contact">
+    <div className="flex-row align-center justify-items-center px-3" id="contact">
       <div className="content-width-full pt-14">
         <h2 className="pb-8 text-4xl font-serif">
           Certifications
