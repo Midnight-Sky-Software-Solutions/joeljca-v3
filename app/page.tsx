@@ -3,6 +3,7 @@ import Hero from "@/app/hero";
 import Portfolio from "./portfolio";
 import Services from "./services";
 import Experience from "./experience";
+import Certifications from "./certifications";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Services />
       {/* <Portfolio /> */}
       <Experience />
+      <Certifications />
       <Contact />
     </div>
   );

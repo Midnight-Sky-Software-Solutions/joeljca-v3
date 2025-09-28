@@ -6,7 +6,7 @@ export default function Experience() {
           My Experience
         </h2>
         <div className="grid grid-cols-3">
-          <div className=" col-span-3 lg:col-span-2 text-xl space-y-3">
+          <div className="col-span-3 lg:col-span-2 text-xl space-y-3">
             <p>
               I received my undergraduate Degree from the University of Alberta where I graduated with a Major in Computing Science and a Minor in Philosophy.
             </p>
