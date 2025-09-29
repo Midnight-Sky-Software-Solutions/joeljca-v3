@@ -33,7 +33,7 @@ export default function Services() {
               <li>Leverage code generation to keep your frontend in sync with your backend.</li>
               <li>Secure your application with ironclad authentication and authorization.</li>
             </ul>
-            <p>I partner with <strong>.NET shops and enterprise IT leaders</strong> who want the best of both worlds: the stability of ASP.NET with the flexibility and speed of Next.js.</p>
+            <p>I partner with <strong>.NET shops and enterprise IT leaders</strong> who want the best of both worlds: the stability of ASP.NET with the flexibility and speed of React.</p>
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}

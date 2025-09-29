@@ -6,8 +6,8 @@ import NavBar from "@/ui/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Next.js Consulting for .NET Shops | Joel Johnston",
-  description: "I help .NET shops build modern frontends in Next.js.",
+  title: "React Consulting for .NET Shops | Joel Johnston",
+  description: "I help .NET shops build modern frontends in React.",
 };
 
 export default function RootLayout({
