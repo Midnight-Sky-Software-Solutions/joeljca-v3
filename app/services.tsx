@@ -23,7 +23,7 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              Your team relies on <strong>SQL Server and ASP.NET</strong> for reliable backends, but your frontend lags behind in usability, performance and modern standards. That&apos;s where I come. I can help you:
+              Your team relies on <strong>SQL Server and ASP.NET</strong> for reliable backends, but your frontend lags behind in usability, performance and modern standards. That&apos;s where I come. As a .NET developer specializing in React integrations, I can help you:
             </p>
             <ul className="list-disc list-inside">
               <li>Deliver responsive, accessible, and intuitive interfaces that today&apos;s users expect.</li>
