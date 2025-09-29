@@ -26,12 +26,9 @@ export default function Services() {
               Your team relies on <strong>SQL Server and ASP.NET</strong> for reliable backends, but your frontend lags behind in usability, performance and modern standards. That&apos;s where I come. As a .NET developer specializing in React integrations, I can help you:
             </p>
             <ul className="list-disc list-inside">
-              <li>Deliver responsive, accessible, and intuitive interfaces that today&apos;s users expect.</li>
-              <li>Leverage SSR and SSG for blazing-fast application performance.</li>
-              <li>Adopt best practices for version control, build, and deployment.</li>
-              <li>Integrate with Identity Providers for a seamless login and registration experience.</li>
-              <li>Leverage code generation to keep your frontend in sync with your backend.</li>
-              <li>Secure your application with ironclad authentication and authorization.</li>
+              <li>Migrate to a modern frontend with a wide talent pool and excellent community support.</li>
+              <li>Future-proof your .NET stack so that your can enjoy the benefits for years to come.</li>
+              <li>Deliver responsive, accessible and intuitive user interfaces that today&apos;s users expect.</li>
             </ul>
             <p>I partner with <strong>.NET shops and enterprise IT leaders</strong> who want the best of both worlds: the stability of ASP.NET with the flexibility and speed of React.</p>
             <motion.div
