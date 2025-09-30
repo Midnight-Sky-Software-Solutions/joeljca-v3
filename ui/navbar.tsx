@@ -9,7 +9,7 @@ import { AnimatePresence } from "motion/react";
 
 const navItems = [
   { name: "Services", href: "/#services" },
-  // { name: "Portfolio", href: "/#portfolio" },
+  { name: "Portfolio", href: "/#portfolio" },
   { name: "Contact", href: "/contact" },
   { name: "Blog", href: "/blog" },
 ];
