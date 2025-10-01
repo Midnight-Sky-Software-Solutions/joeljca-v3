@@ -65,6 +65,11 @@ body {
       display: flex;
       justify-content: center;
     }
+
+    pre {
+      overflow-x: scroll;
+      font-size: small;
+    }
   }
   
 }
