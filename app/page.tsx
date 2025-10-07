@@ -4,12 +4,14 @@ import Portfolio from "./portfolio";
 import Services from "./services";
 import Experience from "./experience";
 import Certifications from "./certifications";
+import Offer from "./offer";
 
 export default function Home() {
   return (
     <div>
       <Hero />
       <Services />
+      <Offer />
       <Portfolio />
       <Experience />
       <Certifications />
