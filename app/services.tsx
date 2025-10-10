@@ -23,14 +23,17 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              Your team relies on <strong>SQL Server and ASP.NET</strong> for reliable backends, but your frontend lags behind in usability, performance and modern standards. That&apos;s where I come. As a .NET developer specializing in React integrations, I can help you:
+              If you want to ditch ASP.NET Web Forms and migrate to a modern web stack, I&apos;m the guy to get you there.
             </p>
-            <ul className="list-disc list-inside">
-              <li>Migrate to a modern frontend with a wide talent pool and excellent community support.</li>
-              <li>Future-proof your .NET stack so that your can enjoy the benefits for years to come.</li>
-              <li>Deliver responsive, accessible and intuitive user interfaces that today&apos;s users expect.</li>
-            </ul>
-            <p>I partner with <strong>.NET shops and enterprise IT leaders</strong> who want the best of both worlds: the stability of ASP.NET with the flexibility and speed of React.</p>
+            <p>
+              Is your organization struggling with a clunky user experience and slow development cycles? I&apos;ve worked with Web Forms for over six years, so I know the pain first hand. Simple changes take ages and the user experience does not live up to today&apos;s standards.
+            </p>
+            <p>
+              <b>Don&apos;t let outdated technology hold back your business goals.</b> With my help, you can future-proof your .NET investments with a modern stack that offers faster development cycles and sleek user interfaces.
+            </p>
+            <p>
+              I&apos;ve built .NET solutions that serve 70,000+ end users using modern front end frameworks like <b>React</b> and <b>Angular</b>. Book a free consultation with me so that we can find out if my services are right for you.
+            </p>
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}

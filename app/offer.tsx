@@ -9,7 +9,7 @@ export default function Offer() {
           <div className="col-start-3 col-end-11 text-xl space-y-6 pb-12">
             <p>
               Do you have have a legacy project built in ASP.NET Web Forms or ASP.NET MVC?
-              Are you considering migrating to React, but want to know the risks and required effort first?
+              Are you considering migrating, but want to know the risks and required effort first?
               I will conduct a <strong>free</strong> 1 hour code review of your project to assess your readiness.
             </p>
             <Link
