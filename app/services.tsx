@@ -23,16 +23,19 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              If you want to ditch ASP.NET Web Forms and migrate to a modern web stack, I&apos;m the guy to get you there.
+              These days, your ASP.NET Web Forms application seems to be causing more problems than it solves. End users complain endlessly about the poor experience and outdated design. Your team is drowning in a sea of feature requests and defects, but each change feels like a game of Jenga. I know this pain because I&apos;ve worked hands-on with Web Forms for over six years.
             </p>
             <p>
-              Is your organization struggling with a clunky user experience and slow development cycles? I&apos;ve worked with Web Forms for over six years, so I know the pain first hand. Simple changes take ages and the user experience does not live up to today&apos;s standards.
+              As an IT leader, you want to do better but a migration has its own challenges. Difficult technical decisions, resource constraints, and project risks all block the path to a better solution.
             </p>
             <p>
-              <b>Don&apos;t let outdated technology hold back your business goals.</b> With my help, you can future-proof your .NET investments with a modern stack that offers faster development cycles and sleek user interfaces.
+              I&apos;m here to show that a migration might not be as scary as you think. Leveraging my eight years of industry experience, I will help you assess your readiness, select a new stack, and work alongside your team to execute a seamless migration.
             </p>
             <p>
-              I&apos;ve built .NET solutions that serve 70,000+ end users using modern front end frameworks like <b>React</b> and <b>Angular</b>. Book a free consultation with me so that we can find out if my services are right for you.
+              I invite you to book a call with me so that I can better understand your needs. I will gladly perform a free code review of your existing application and create a report with key recommendations. After reviewing my report, if you would like to move forward with my services, you can hire me for my contract rate of US$90 / hour.
+            </p>
+            <p>
+              Taking the first step may seem daunting, but staying on your current path is risky. Without modernizing your stack, the backlog continues to grow and dissatisfaction mounts. Let me help you build a new solution that delights your end users and keeps up with business demands.
             </p>
             <motion.div
               initial={{ scale: 0 }}
@@ -40,7 +43,7 @@ export default function Services() {
               viewport={{ once: true }}
             >
               <p className="text-center text-cyan-600 font-bold py-3 text-3xl">
-                <Link href="/contact">👉 Let me take the confusion out of modern web frameworks!</Link>
+                <Link href="/contact">👉 Book a call with me today!</Link>
               </p>
             </motion.div>
           </div>
