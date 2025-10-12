@@ -6,7 +6,7 @@ import NavBar from "@/ui/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "ASP.NET Web Forms Migrations | Joel Johnston",
+  title: "ASP.NET Web Forms Modernization | Joel Johnston",
   description: "I help .NET shops modernize their stack.",
 };
 

@@ -18,7 +18,6 @@ export default function Services() {
               height={304}
             />
           </div>
-          
           <div
             className="grow text-xl space-y-3"
           >
