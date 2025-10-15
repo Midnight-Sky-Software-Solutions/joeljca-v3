@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,6 +17,14 @@ export default function Hero() {
           <p className="text-white text-2xl mt-10">
             I help .NET shops modernize their stack.
           </p>
+          <div className="mt-10 text-center">
+            <Link
+              href="/contact"
+              className="bg-cyan-500 hover:bg-cyan-400 text-white text-xl px-3 py-2 rounded-lg"
+            >
+              📲 Contact Me
+            </Link>
+          </div>
         </motion.div>
         <div>
           <Image
