@@ -6,10 +6,12 @@ import Experience from "./experience";
 import Certifications from "./certifications";
 import Offer from "./offer";
 import CallToAction from "./cta";
+import TheProblem from "./the-problem";
 
 export default function Home() {
   return (
     <div>
+      <TheProblem />
       <Hero />
       <Services />
       <CallToAction />
