@@ -20,7 +20,7 @@ export default function Services() {
             className="grow text-xl space-y-3"
           >
             <p>
-              These days, your ASP.NET Web Forms application seems to be causing more problems than it solves. End users complain endlessly about the poor experience and outdated design. Your team is drowning in a sea of feature requests and defects, but each change feels like a game of Jenga. I know this pain because I&apos;ve worked hands-on with Web Forms for over six years.
+              These days, your legacy ASP.NET application seems to be causing more problems than it solves. End users complain endlessly about the poor experience and outdated design. Your team is drowning in a sea of feature requests and defects, but each change feels like a game of Jenga. I know this pain because I&apos;ve worked hands-on with Web Forms for over six years.
             </p>
             <p>
               As an IT leader, you want to do better but a migration has its own challenges. Difficult technical decisions, resource constraints, and project risks all block the path to a better solution.
