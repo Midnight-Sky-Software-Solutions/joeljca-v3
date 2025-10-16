@@ -7,6 +7,7 @@ import Certifications from "./certifications";
 import Offer from "./offer";
 import CallToAction from "./cta";
 import TheProblem from "./the-problem";
+import TheGuide from "./the-guide";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <TheProblem />
       <Hero />
       <Services />
+      <TheGuide />
       <CallToAction />
       <Offer />
       <Portfolio />

@@ -5,7 +5,7 @@ export default function Services() {
     <div className="full-width-container" id="services">
       <div className="content-width-full pt-14">
         <h2 className="pb-8 text-4xl font-serif">
-          My Services
+          What I Do
         </h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
           <div className="lg:w-128 flex-none">
