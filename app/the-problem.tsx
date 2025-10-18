@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TheProblem() {
   return (
-    <div className="full-width-container bg-[url(/stressed_worker.jpg)] bg-center md:bg-bottom bg-cover bg-fixed h-60">
+    <div className="full-width-container bg-[url(/stressed_worker.jpg)] bg-center bg-cover bg-fixed h-70">
       <div className="bg-black/60 grow flex flex-col items-center justify-center gap-2">
         <h2 className="text-white text-center">
           Frustrated with your legacy .NET project?
