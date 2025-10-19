@@ -18,6 +18,9 @@ export async function getPostFromWordpress(slug: string): Promise<Post | NotFoun
       if (json.error == 'unknown_post') {
         return new NotFoundError(json.message);
       }
-      return json;
+      return {
+        ...json,
+        title: json.title.replace('&#8217;', "'")
+      };
     });
 }
