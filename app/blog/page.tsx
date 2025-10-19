@@ -1,5 +1,7 @@
 import { delay } from "@/lib/harness";
+import { Posts } from "@/lib/model/wordpress";
 import { getPostsFromWordpress } from "@/lib/services/wordpress";
+import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -39,11 +41,9 @@ function BlogPostSkeleton() {
   );
 }
 
-async function BlogRoll({ page }: { page: number }) {
-
-  const posts = await getPostsFromWordpress(page);
-  // await delay(5000)
-
+async function BlogRoll({ posts }: {
+  posts: Posts
+}) {
   return (
     <div className="flex flex-col gap-12">
       {posts.posts.map(post => (
@@ -70,14 +70,45 @@ function BlogRollSkeleton() {
   );
 }
 
-export default function Blog() {
+export default async function Blog({ searchParams }: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+
+  const params = await searchParams;
+  const page = parseInt(params['page'] as string ?? '1');
+  const posts = await getPostsFromWordpress(page);
+
   return (
     <div className="full-width-container pb-14">
       <div className="content-width-full">
         <h2 className="py-10">Blog</h2>
         <Suspense fallback={<BlogRollSkeleton />}>
-          <BlogRoll page={1} />
+          <BlogRoll posts={posts} />
         </Suspense>
+        <div className="flex my-6">
+          { page > 1 ? (
+                <Link className="w-16 text-blue-500" href={`/blog?page=${page-1}`}>
+                  <ArrowLeftCircleIcon />
+                </Link>
+              )
+              : (
+                <span className="w-16 text-blue-100">
+                  <ArrowLeftCircleIcon />
+                </span>
+              )
+          }
+          { page < posts.totalPages ? (
+                <Link className="w-16 text-blue-500" href={`/blog?page=${page+1}`}>
+                  <ArrowRightCircleIcon />
+                </Link>
+              )
+              : (
+                <span className="w-16 text-blue-100">
+                  <ArrowRightCircleIcon />
+                </span>
+              )
+          }
+        </div>
       </div>
     </div>
   );
