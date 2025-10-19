@@ -44,6 +44,6 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams() {
-  const posts = await getPostsFromWordpress(1, 1000);
+  const posts = await getPostsFromWordpress(1, 100);
   return posts.posts.map(post => ({ slug: post.slug }));
 }
