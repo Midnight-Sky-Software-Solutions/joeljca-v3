@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CallToAction() {
   return (
-    <div className="full-width-container" id="portfolio">
+    <div className="full-width-container">
       <div className="content-width-full pt-12">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5">
           <div className="grow space-y-3 text-xl">

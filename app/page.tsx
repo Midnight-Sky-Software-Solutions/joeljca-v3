@@ -12,7 +12,6 @@ import TheGuide from "./the-guide";
 export default function Home() {
   return (
     <div>
-      <TheProblem />
       <Hero />
       <Services />
       <TheGuide />

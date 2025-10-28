@@ -97,19 +97,19 @@ function StubMobileNav() {
 
 function DesktopNav() {
   return (
-    <header className="justify-center drop-shadow-md	bg-white hidden lg:flex">
+    <header className="justify-center fixed top-0 drop-shadow-md	bg-black/40 hidden lg:flex w-full z-20 backdrop-blur-sm text-white">
       <div className="flex max-w-6xl grow h-20 items-center px-3">
         <Link href="/" className={`font-mono text-3xl`}>
           Joel Johnston&nbsp;
             <span aria-hidden="true">&lt;</span>
-            <span className="text-cyan-500">Web Dev</span>
+            <span className="text-cyan-200">Web Dev</span>
             <span aria-hidden="true">/&gt;</span>
         </Link>
         <nav className="grow flex justify-center">
           <ul className="flex gap-8 text-2xl">
             {navItems.map(item => (
               <li key={item.name}>
-                <Link href={item.href} className="text-blue-800">
+                <Link href={item.href} className="text-blue-100">
                   {item.name}
                 </Link>
               </li>
@@ -119,7 +119,7 @@ function DesktopNav() {
         <div>
           <ul className="flex gap-3">
             {socialMediaItems.map(item => (
-              <li key={item.name}>
+              <li key={item.name} className="bg-white rounded-full">
                 <Link 
                   href={item.href}
                   target={item.href.startsWith("mailto") ? "" : "_blank"}

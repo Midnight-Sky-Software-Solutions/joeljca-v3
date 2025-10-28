@@ -16,7 +16,7 @@ export default async function BlogPost({ params }: Props) {
     );
   } else {
     return (
-      <div className="full-width-container pb-14">
+      <div className="full-width-container pb-14 pt-20">
         <div className="content-width-full">
           <h2 className="py-10 text-4xl lg:px-20">{post.title}</h2>
           <article className="wordpress lg:px-20 flex flex-col gap-5 text-xl" dangerouslySetInnerHTML={{__html: post.content}}></article>

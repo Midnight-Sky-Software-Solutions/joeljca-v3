@@ -79,7 +79,7 @@ export default async function Blog({ searchParams }: {
   const posts = await getPostsFromWordpress(page);
 
   return (
-    <div className="full-width-container pb-14">
+    <div className="full-width-container pb-14 pt-20">
       <div className="content-width-full">
         <h2 className="py-10">Blog</h2>
         <Suspense fallback={<BlogRollSkeleton />}>
