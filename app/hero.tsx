@@ -5,12 +5,11 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div
-      className="bg-[url('/abstract2.jpg')] from-cyan-800 to-cyan-shade flex h-[100vh] bg-cover bg-fixed"
+      className="bg-[url('/abstract2.jpg')] from-cyan-800 to-cyan-shade flex h-[100vh] bg-cover"
     >
       <div className="flex grow justify-center bg-black/50">
         <div className="flex flex-col max-w-6xl grow items-center px-8 sm:px-16 lg:px-32 lg:flex-row pt-12 lg:pt-0 text-center lg:text-right gap-10">
           <motion.div 
-            className="grow"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
@@ -27,7 +26,7 @@ export default function Hero() {
               </Link>
             </div>
           </motion.div>
-          <div>
+          <div className="grow flex flex-col justify-center">
             <Image
               src="/moi.jpg"
               alt="A picture of me (Joel)"
