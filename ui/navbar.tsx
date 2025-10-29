@@ -111,7 +111,7 @@ function DesktopNav() {
           <ul className="flex gap-8 text-2xl">
             {navItems.map(item => (
               <li key={item.name}>
-                <Link href={item.href} className="text-blue-100">
+                <Link href={item.href} className="text-aqua-glow-100">
                   {item.name}
                 </Link>
               </li>
