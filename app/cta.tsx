@@ -9,7 +9,7 @@ export default function CallToAction() {
       <div className="content-width-full pt-12">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5">
           <div className="grow space-y-3 text-xl">
-            <h3 className="text-3xl font-serif">Better Days Await</h3>
+            <h3 className="text-3xl font-serif">Start Your Modernization Journey — With a Free Expert Code Review</h3>
             <p>
               I invite you to book a call with me so that I can better understand your needs. I will gladly perform a free code review of your existing application and create a report with key recommendations. After reviewing my report, if you would like to move forward with my services, you can hire me for my contract rate of CA$90 / hour.
             </p>

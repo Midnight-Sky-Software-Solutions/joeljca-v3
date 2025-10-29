@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div className="full-width-container" id="services">
       <div className="content-width-full pt-14">
-        <h2 className="pb-8 text-4xl font-serif">
+        <h2 className="pb-8 text-4xl font-serif text-center">
           What I Do
         </h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">

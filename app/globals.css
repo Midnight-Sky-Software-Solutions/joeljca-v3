@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'primeicons/primeicons.css';
 
 :root {
   --background: #ffffff;
@@ -10,7 +11,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-josefin-sans);
   --font-mono: var(--font-inconsolata);
-  --font-serif: Inria-Sans;
+  --font-serif: "acumin-pro";
 }
 
 @theme {
@@ -51,6 +52,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Marvel, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 @layer base {
@@ -109,4 +111,3 @@ body {
   }
 }
 
-@import 'primeicons/primeicons.css';
