@@ -40,6 +40,16 @@ function MobileNav() {
         initial={{ y: -300 }}
         animate={{ y: 0 }}
       >
+        <div className="flex justify-center p-5">
+          <Link href="/" className={`font-mono text-3xl`}>
+            <Image
+              src="/logo.svg"
+              alt="Joel Johnston"
+              width={207}
+              height={58.65}
+            />
+          </Link>
+        </div>
         <nav>
           <ul className="text-3xl">
             {navItemsWithHome.map(item => (
