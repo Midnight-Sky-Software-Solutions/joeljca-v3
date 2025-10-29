@@ -1,4 +1,5 @@
 import MailingListSignup from "./mailing-list-signup";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,8 +12,12 @@ export default function Footer() {
         <div></div>
         <div></div>
         <div>
-          <p className="text-2xl font-bold">✉️ Subscribe to my mailing list</p>
-          <MailingListSignup />
+          <Image
+            src="/logo_white.svg"
+            alt="Joel Johnston"
+            width={207}
+            height={58.65}
+          />
         </div>
       </div>
     </footer>
