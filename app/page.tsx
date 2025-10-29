@@ -6,8 +6,8 @@ import Experience from "./experience";
 import Certifications from "./certifications";
 import Offer from "./offer";
 import CallToAction from "./cta";
-import TheProblem from "./the-problem";
 import TheGuide from "./the-guide";
+import Ebook from "./ebook";
 
 export default function Home() {
   return (
@@ -20,6 +20,7 @@ export default function Home() {
       <Portfolio />
       <Experience />
       <Certifications />
+      <Ebook />
       <Contact />
     </div>
   );

@@ -59,12 +59,7 @@ function MobileNav() {
                   href={item.href}
                   target={item.href.startsWith("mailto") ? "" : "_blank"}
                 >
-                  <Image
-                    src={item.image}
-                    width={45}
-                    height={45}
-                    alt={item.name}
-                  />
+                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
                 </Link>
               </li>
             ))}
