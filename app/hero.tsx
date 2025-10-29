@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="mt-10">
               <Link
                 href="/contact"
-                className="bg-green-600 hover:bg-cyan-400 text-white text-2xl px-4 py-3 rounded-lg"
+                className="bg-fresh-lime hover:bg-cyan-400 text-white text-2xl px-4 py-3 rounded-lg"
               >
                 📲 Contact Me
               </Link>

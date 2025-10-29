@@ -97,13 +97,15 @@ function StubMobileNav() {
 
 function DesktopNav() {
   return (
-    <header className="justify-center fixed top-0 drop-shadow-md	bg-black/40 hidden lg:flex w-full z-20 backdrop-blur-sm text-white">
+    <header className="justify-center fixed top-0 drop-shadow-md	bg-black/50 hidden lg:flex w-full z-20 backdrop-blur-sm text-white">
       <div className="flex max-w-6xl grow h-20 items-center px-3">
         <Link href="/" className={`font-mono text-3xl`}>
-          Joel Johnston&nbsp;
-            <span aria-hidden="true">&lt;</span>
-            <span className="text-cyan-200">Web Dev</span>
-            <span aria-hidden="true">/&gt;</span>
+          <Image
+            src="/logo.svg"
+            alt="Joel Johnston"
+            width={207}
+            height={58.65}
+          />
         </Link>
         <nav className="grow flex justify-center">
           <ul className="flex gap-8 text-2xl">
