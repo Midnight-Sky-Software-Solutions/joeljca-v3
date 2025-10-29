@@ -108,3 +108,5 @@ body {
     flex-grow: 1;
   }
 }
+
+@import 'primeicons/primeicons.css';

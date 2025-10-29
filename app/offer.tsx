@@ -14,7 +14,7 @@ export default function Offer() {
             </p>
             <Link
               href="/contact"
-              className="bg-cyan-500 hover:bg-cyan-400 text-white text-xl px-3 py-2 rounded-lg"
+              className="bg-fresh-lime-500 hover:bg-aqua-glow-400 text-white text-xl px-3 py-2 rounded-lg"
             >
               Next Steps
             </Link>

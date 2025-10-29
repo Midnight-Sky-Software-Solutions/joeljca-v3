@@ -15,9 +15,9 @@ const navItems = [
 ];
 
 const socialMediaItems = [
-  { name: "Upwork", image: "/Upwork.svg", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
-  { name: "LinkedIn", image: "/LinkedIn.svg", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
-  { name: "Email", image: "/eMail.svg", "href": "mailto:me@joelj.ca" },
+  // { name: "Upwork", image: "pi-check", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
+  { name: "LinkedIn", image: "pi-linkedin", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
+  { name: "Email", image: "pi-envelope", "href": "mailto:me@joelj.ca" },
 ]
 
 function MobileNav() {
@@ -121,17 +121,12 @@ function DesktopNav() {
         <div>
           <ul className="flex gap-3">
             {socialMediaItems.map(item => (
-              <li key={item.name} className="bg-white rounded-full">
+              <li key={item.name} className="text-fresh-lime-300">
                 <Link 
                   href={item.href}
                   target={item.href.startsWith("mailto") ? "" : "_blank"}
                 >
-                  <Image
-                    src={item.image}
-                    width={45}
-                    height={45}
-                    alt={item.name}
-                  />
+                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
                 </Link>
               </li>
             ))}
