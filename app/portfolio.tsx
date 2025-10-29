@@ -12,7 +12,7 @@ export default function Portfolio() {
           <div className="grow ">
             <h3 className="text-3xl pb-8 font-serif">MemberPlus</h3>
             <p className="text-xl pb-8">
-              A multi-tenant web application for membership management written in ASP.NET Web API and Next.js. 
+              A multi-tenant membership management platform developed using ASP.NET Web API and React Router. The system supports organization-level data segregation, user authentication, subscription renewals, and RESTful API integration for external services.
             </p>
             <div className="flex gap-3">
               <Link
