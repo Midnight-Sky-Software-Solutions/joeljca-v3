@@ -116,7 +116,7 @@ function DesktopNav() {
           <ul className="flex gap-8 text-2xl">
             {navItems.map(item => (
               <li key={item.name}>
-                <Link href={item.href} className="text-aqua-glow-050 font-serif">
+                <Link href={item.href} className="text-white font-serif">
                   {item.name}
                 </Link>
               </li>
@@ -126,7 +126,7 @@ function DesktopNav() {
         <div>
           <ul className="flex gap-3">
             {socialMediaItems.map(item => (
-              <li key={item.name} className="text-fresh-lime-050">
+              <li key={item.name} className="text-white">
                 <Link 
                   href={item.href}
                   target={item.href.startsWith("mailto") ? "" : "_blank"}
