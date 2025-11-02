@@ -30,46 +30,41 @@ function MobileNav() {
   }, [pathname, searchParams]);
 
   return (
-    <header className="bg-white lg:hidden sticky top-0 z-10 border-1 border-warm-grey-700">
-      {isOpen &&
-        <motion.div
-          initial={{ y: -300 }}
-          animate={{ y: 0 }}
-        >
-          <div className="flex justify-center p-5">
-            <Link href="/" className={`font-mono text-3xl`}>
-              <Image
-                src="/logo.svg"
-                alt="Joel Johnston"
-                width={207}
-                height={58.65}
-              />
-            </Link>
-          </div>
-          <nav>
-            <ul className="text-3xl">
-              {navItemsWithHome.map(item => (
-                <li key={item.name} className="text-center py-3">
-                  <Link href={item.href}>
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="flex justify-center my-6">
-            <Link
-              href="/contact"
-              className="bg-fresh-lime-500 hover:bg-aqua-glow-400 text-white text-xl px-3 py-2 rounded-lg"
-            >
-              Contact Me
-            </Link>
-          </div>
-        </motion.div>
-      }
-      <div className="flex-row justify-items-center">
+    <header className={`bg-white/40 lg:hidden fixed top-0 z-10 border-1 border-warm-grey-700 ${!isOpen ? '-translate-y-100' : ''} transition duration-200 ease-in-out w-[100vw]`}>
+      <div className="flex flex-col h-100 bg-white">
+        <div className="flex justify-center p-5">
+          <Link href="/" className={`font-mono text-3xl`}>
+            <Image
+              src="/logo.svg"
+              alt="Joel Johnston"
+              width={207}
+              height={58.65}
+            />
+          </Link>
+        </div>
+        <nav className="flex grow">
+          <ul className="text-3xl grow flex flex-col justify-between">
+            {navItemsWithHome.map(item => (
+              <li key={item.name} className="text-center">
+                <Link href={item.href}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="flex justify-center my-6">
+          <Link
+            href="/contact"
+            className="bg-fresh-lime-500 hover:bg-aqua-glow-400 text-white text-xl px-3 py-2 rounded-lg"
+          >
+            Contact Me
+          </Link>
+        </div>
+      </div>
+      <div className="flex-row justify-items-end">
         <div className="flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)} className="w-10">
+          <button onClick={() => setIsOpen(!isOpen)} className="w-10 mx-2">
             <Bars3Icon />
           </button>
         </div>
