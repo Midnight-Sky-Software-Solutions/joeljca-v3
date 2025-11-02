@@ -14,14 +14,10 @@ const navItems = [
   { name: "Blog", href: "/blog" },
 ];
 
-const socialMediaItems = [
-  // { name: "Upwork", image: "pi-check", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
-  { name: "LinkedIn", image: "pi-linkedin", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
-  { name: "Email", image: "pi-envelope", "href": "mailto:me@joelj.ca" },
-]
+
 
 function MobileNav() {
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const navItemsWithHome = [
     { name: "Home", href: "/" }
@@ -36,46 +32,40 @@ function MobileNav() {
   return (
     <header className="bg-white lg:hidden sticky top-0 z-10 border-1 border-warm-grey-700">
       {isOpen &&
-      <motion.div
-        initial={{ y: -300 }}
-        animate={{ y: 0 }}
-      >
-        <div className="flex justify-center p-5">
-          <Link href="/" className={`font-mono text-3xl`}>
-            <Image
-              src="/logo.svg"
-              alt="Joel Johnston"
-              width={207}
-              height={58.65}
-            />
-          </Link>
-        </div>
-        <nav>
-          <ul className="text-3xl">
-            {navItemsWithHome.map(item => (
-              <li key={item.name} className="text-center py-3">
-                <Link href={item.href}>
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="flex justify-center my-6">
-          <ul className="flex gap-12 display-block">
-            {socialMediaItems.map(item => (
-              <li key={item.name}>
-                <Link 
-                  href={item.href}
-                  target={item.href.startsWith("mailto") ? "" : "_blank"}
-                >
-                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </motion.div>
+        <motion.div
+          initial={{ y: -300 }}
+          animate={{ y: 0 }}
+        >
+          <div className="flex justify-center p-5">
+            <Link href="/" className={`font-mono text-3xl`}>
+              <Image
+                src="/logo.svg"
+                alt="Joel Johnston"
+                width={207}
+                height={58.65}
+              />
+            </Link>
+          </div>
+          <nav>
+            <ul className="text-3xl">
+              {navItemsWithHome.map(item => (
+                <li key={item.name} className="text-center py-3">
+                  <Link href={item.href}>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex justify-center my-6">
+            <Link
+              href="/contact"
+              className="bg-fresh-lime-500 hover:bg-aqua-glow-400 text-white text-xl px-3 py-2 rounded-lg"
+            >
+              Contact Me
+            </Link>
+          </div>
+        </motion.div>
       }
       <div className="flex-row justify-items-center">
         <div className="flex items-center">
@@ -124,18 +114,12 @@ function DesktopNav() {
           </ul>
         </nav>
         <div>
-          <ul className="flex gap-3">
-            {socialMediaItems.map(item => (
-              <li key={item.name} className="text-white">
-                <Link 
-                  href={item.href}
-                  target={item.href.startsWith("mailto") ? "" : "_blank"}
-                >
-                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <Link
+            href="/contact"
+            className="bg-fresh-lime-500 hover:bg-aqua-glow-400 text-white text-xl px-3 py-2 rounded-lg"
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
     </header>

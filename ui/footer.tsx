@@ -1,5 +1,11 @@
-import MailingListSignup from "./mailing-list-signup";
+import Link from "next/link";
 import Image from "next/image";
+
+const socialMediaItems = [
+  // { name: "Upwork", image: "pi-check", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
+  { name: "LinkedIn", image: "pi-linkedin", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
+  { name: "Email", image: "pi-envelope", "href": "mailto:me@joelj.ca" },
+]
 
 export default function Footer() {
   return (
@@ -10,7 +16,21 @@ export default function Footer() {
           <p>I was born to run~</p>
         </div>
         <div></div>
-        <div></div>
+        <div>
+          <h2 className="font-bold py-2 text-sm">Socials</h2>
+          <ul className="flex gap-3">
+            {socialMediaItems.map(item => (
+              <li key={item.name} className="text-white">
+                <Link
+                  href={item.href}
+                  target={item.href.startsWith("mailto") ? "" : "_blank"}
+                >
+                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div>
           <Image
             src="/logo_white.svg"
