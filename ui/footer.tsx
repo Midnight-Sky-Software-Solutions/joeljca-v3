@@ -10,7 +10,7 @@ const socialMediaItems = [
 export default function Footer() {
   return (
     <footer className="flex justify-center drop-shadow-md	bg-aqua-glow-700">
-      <div className="flex max-w-6xl grow my-8 items-center px-3 grid sm:grid-cols-2 lg:grid-cols-4 text-white">
+      <div className="flex max-w-6xl grow my-8 items-start px-3 grid sm:grid-cols-2 lg:grid-cols-4 text-white">
         <div>
           <p>&copy; Midnight Sky Software Solutions Ltd.</p>
           <p>I was born to run~</p>
@@ -19,7 +19,7 @@ export default function Footer() {
           <Link className="underline font-serif text-sm" href="/privacy-policy">Privacy Policy</Link>
         </div>
         <div>
-          <h2 className="font-bold py-2 text-sm">Socials</h2>
+          <h2 className="font-bold pb-2 text-sm">Socials</h2>
           <ul className="flex gap-3">
             {socialMediaItems.map(item => (
               <li key={item.name} className="text-white">
