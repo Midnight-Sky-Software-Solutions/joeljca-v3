@@ -10,10 +10,8 @@ export default function PrivacyPolicy() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12 prose prose-invert prose-headings:mt-8 pt-20 text-lg">
-      <header className="mb-8">
-        <h2 className="text-4xl font-bold pt-10">Privacy Policy</h2>
-        <p className="mt-2 text-sm">Last updated: {lastUpdated}</p>
-      </header>
+      <h2 className="text-4xl font-bold pt-10">Privacy Policy</h2>
+      <p className="mt-2 text-sm">Last updated: {lastUpdated}</p>
 
 
       <section id="introduction" className="mt-10">
