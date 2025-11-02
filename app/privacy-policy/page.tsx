@@ -19,13 +19,13 @@ export default function PrivacyPolicy() {
       <section id="introduction" className="mt-10">
         <h3>1. Introduction</h3>
         <p>
-          Welcome to <strong>{siteName}</strong> ("we," "our," or "us"). Your privacy is
+          Welcome to <strong>{siteName}</strong> (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). Your privacy is
           important to us. This Privacy Policy explains how we collect, use,
           disclose, and protect your information when you visit our website {" "}
           <a href={siteUrl} target="_blank" rel="noopener noreferrer">
             {siteUrl}
           </a>{" "}
-          (the "Site"). By using the Site, you agree to this Privacy Policy. If
+          (the &quot;Site&quot;). By using the Site, you agree to this Privacy Policy. If
           you do not agree, please do not use our website.
         </p>
       </section>
