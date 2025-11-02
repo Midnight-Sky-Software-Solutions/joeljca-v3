@@ -15,7 +15,9 @@ export default function Footer() {
           <p>&copy; Midnight Sky Software Solutions Ltd.</p>
           <p>I was born to run~</p>
         </div>
-        <div></div>
+        <div>
+          <Link className="underline font-serif text-sm" href="/privacy-policy">Privacy Policy</Link>
+        </div>
         <div>
           <h2 className="font-bold py-2 text-sm">Socials</h2>
           <ul className="flex gap-3">
