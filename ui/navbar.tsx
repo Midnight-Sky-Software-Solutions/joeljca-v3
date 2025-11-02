@@ -1,11 +1,9 @@
 "use client"
-import * as motion from "motion/react-client";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
-import { AnimatePresence } from "motion/react";
 
 const navItems = [
   { name: "Services", href: "/#services" },
@@ -13,8 +11,6 @@ const navItems = [
   { name: "Contact", href: "/contact" },
   { name: "Blog", href: "/blog" },
 ];
-
-
 
 function MobileNav() {
 
