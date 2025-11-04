@@ -28,6 +28,8 @@ export default function Hero() {
           </motion.div>
           <div className="grow flex flex-col justify-center">
             <Image
+              priority
+              fetchPriority="high"
               src="/moi.jpg"
               alt="A picture of me (Joel)"
               width={327}
