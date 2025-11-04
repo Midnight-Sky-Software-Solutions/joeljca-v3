@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import FontHack from "./font-hack";
 
 export const metadata: Metadata = {
   title: "ASP.NET Modernization Services | Joel Johnston",
@@ -15,14 +16,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/bcn7uzq.css" />
       </head>
       <body
         className={`${marvel.variable} ${inconsolata.variable} ${inriaSerif.variable} ${josefinSans.variable} antialiased`}
       >
+        <FontHack />
         <NavBar />
         {children}
         <Footer />
