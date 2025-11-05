@@ -1,4 +1,4 @@
-'use cache'
+
 import Ebook from "@/app/ebook";
 import { NotFoundError } from "@/lib/model/app-error";
 import { getPostFromWordpress, getPostsFromWordpress } from "@/lib/services/wordpress";
@@ -9,7 +9,7 @@ type Props = {
 }
 
 export default async function BlogPost({ params }: Props) {
-
+  'use cache'
   const post = await getPostFromWordpress((await params).slug);
 
   if (post instanceof NotFoundError) {
