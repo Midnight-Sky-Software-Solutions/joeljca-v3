@@ -28,6 +28,7 @@ export default async function RootLayout({
       <head>
         <link rel="preconnect" href="https://p.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" />
+        
       </head>
       <body
         className={`${marvel.variable} antialiased`}

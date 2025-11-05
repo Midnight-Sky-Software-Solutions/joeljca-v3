@@ -9,15 +9,18 @@ export default function Analytics() {
   return (
     <>
       <Script
-        strategy="lazyOnload"
+        async
         src="https://www.googletagmanager.com/gtag/js?id=G-G2W02313YC"
-        onLoad={() => {
-          (window as any).dataLayer = (window as any).dataLayer || [];
-          function gtag() { (window as any).dataLayer.push(arguments); }
-          (window as any).dataLayer.push(['js', new Date()]);
-          (window as any).dataLayer.push(['config', 'G-G2W02313YC']);
-        }}
       />
+      <Script strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-G2W02313YC');
+        `}
+      </Script>
     </>
   );
 }
