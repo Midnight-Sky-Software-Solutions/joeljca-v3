@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inriaSerif, inconsolata, marvel, josefinSans } from "@/ui/fonts";
+import { marvel } from "@/ui/fonts";
 import "./globals.css";
 import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://use.typekit.net" />
       </head>
       <body
-        className={`${marvel.variable} ${inconsolata.variable} ${inriaSerif.variable} ${josefinSans.variable} antialiased`}
+        className={`${marvel.variable} antialiased`}
       >
         <FontHack />
         <NavBar />
