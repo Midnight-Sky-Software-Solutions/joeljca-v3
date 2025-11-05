@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const socialMediaItems = [
-  // { name: "Upwork", image: "pi-check", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
+  { name: "Upwork", image: "pi-check", "href": "https://www.upwork.com/freelancers/~011f757c30fa5d1800" },
   { name: "LinkedIn", image: "pi-linkedin", "href": "https://www.linkedin.com/in/joel-alexander-johnston/" },
   { name: "Email", image: "pi-envelope", "href": "mailto:me@joelj.ca" },
 ]
@@ -27,7 +27,8 @@ export default function Footer() {
                   href={item.href}
                   target={item.href.startsWith("mailto") ? "" : "_blank"}
                 >
-                  <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span>
+                  {/* <span className={`pi ${item.image}`} style={{ fontSize: '2rem' }}></span> */}
+                  {item.name}
                 </Link>
               </li>
             ))}
