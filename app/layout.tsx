@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const Analytics = dynamic(() => import('./analytics'), {
-  // loading: () => <p>Loading...</p>,
+  loading: () => <></>,
 })
 
 export default function RootLayout({

@@ -26,7 +26,7 @@ export default function Portfolio() {
           </div>
           <div className="lg:w-128 flex-none">
             <Image
-              src="/memberplus_mockup.jpeg"
+              src="/memberplus_mockup2.jpg"
               alt="Mockup of the MemberPlus application"
               width={3700}
               height={2160}
