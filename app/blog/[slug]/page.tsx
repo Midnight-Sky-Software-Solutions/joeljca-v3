@@ -9,7 +9,6 @@ type Props = {
 }
 
 export default async function BlogPost({ params }: Props) {
-  'use cache'
   const post = await getPostFromWordpress((await params).slug);
 
   if (post instanceof NotFoundError) {
