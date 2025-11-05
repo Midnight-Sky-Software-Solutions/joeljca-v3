@@ -24,7 +24,7 @@ export default function Hero() {
           </div>
           <div className="grow flex flex-col justify-center">
             <Image
-              // priority
+              priority
               fetchPriority="high"
               src="/moi.jpg"
               alt="A picture of me (Joel)"
