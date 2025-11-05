@@ -10,6 +10,7 @@ export default function Services() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
           <div className="lg:w-128 flex-none">
             <Image
+              loading="lazy"
               src="/services.png"
               alt="A computer and a headset"
               width={456}
