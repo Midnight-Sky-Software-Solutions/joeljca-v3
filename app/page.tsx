@@ -11,6 +11,7 @@ import TheGuide from "./the-guide";
 import Ebook from "./ebook";
 
 export default async function Home() {
+  'use cache'
   return (
     <div>
       <Hero />

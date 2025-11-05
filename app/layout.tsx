@@ -15,12 +15,12 @@ const Analytics = dynamic(() => import('./analytics'), {
   loading: () => <></>,
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
+  'use cache'
   return (
     <html lang="en" className="scroll-smooth">
       <head>
