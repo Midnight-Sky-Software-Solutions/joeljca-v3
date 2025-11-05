@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    optimizeCss: true, // or pass Critters options object
+  },
 };
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
