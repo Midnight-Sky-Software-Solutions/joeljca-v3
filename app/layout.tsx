@@ -4,9 +4,9 @@ import "./globals.css";
 import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
 import FontHack from "./font-hack";
-import dynamic from "next/dynamic";
 import Analytics from "./analytics";
-import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 export const metadata: Metadata = {
   title: "ASP.NET Modernization Services | Joel Johnston",
@@ -38,6 +38,7 @@ export default async function RootLayout({
         {children}
         <Footer />
       </body>
+      <SpeedInsights />
       <Analytics />
     </html>
   );
