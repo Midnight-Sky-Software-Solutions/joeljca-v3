@@ -5,15 +5,16 @@ import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
 import FontHack from "./font-hack";
 import dynamic from "next/dynamic";
+import Analytics from "./analytics";
 
 export const metadata: Metadata = {
   title: "ASP.NET Modernization Services | Joel Johnston",
   description: "I help .NET shops modernize their stack.",
 };
 
-const Analytics = dynamic(() => import('./analytics'), {
-  loading: () => <></>,
-})
+// const Analytics = dynamic(() => import('./analytics'), {
+//   loading: () => <></>,
+// })
 
 export default async function RootLayout({
   children,
@@ -26,6 +27,7 @@ export default async function RootLayout({
       <head>
         <link rel="preconnect" href="https://p.typekit.net" />
         <link rel="preconnect" href="https://use.typekit.net" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2W02313YC" />
       </head>
       <body
         className={`${marvel.variable} antialiased`}
@@ -35,7 +37,7 @@ export default async function RootLayout({
         {children}
         <Footer />
       </body>
-      {/* <Analytics /> */}
+      <Analytics />
     </html>
   );
 }
