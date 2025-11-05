@@ -1,3 +1,4 @@
+'use cache'
 import Ebook from "@/app/ebook";
 import { NotFoundError } from "@/lib/model/app-error";
 import { getPostFromWordpress, getPostsFromWordpress } from "@/lib/services/wordpress";
