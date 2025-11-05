@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div
-      className="bg-[url('/abstract2m.jpg')] md:bg-[url('/abstract2.webp')] from-cyan-800 to-cyan-shade flex h-[100vh] min-h-140 bg-cover"
+      className="bg-[url('/abstract2m2.jpg')] sm:bg-[url('/abstract2.webp')] from-cyan-800 to-cyan-shade flex h-[100vh] min-h-140 bg-cover"
     >
       <div className="flex grow justify-center bg-black/50">
         <div className="flex flex-col max-w-6xl grow items-center px-8 sm:px-16 lg:px-32 sm:flex-row pt-12 lg:pt-0 text-center lg:text-right gap-10">
