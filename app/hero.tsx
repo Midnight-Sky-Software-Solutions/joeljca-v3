@@ -1,4 +1,3 @@
-import * as motion from "motion/react-client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,10 +8,7 @@ export default function Hero() {
     >
       <div className="flex grow justify-center bg-black/50">
         <div className="flex flex-col max-w-6xl grow items-center px-8 sm:px-16 lg:px-32 sm:flex-row pt-12 lg:pt-0 text-center lg:text-right gap-10">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
+          <div>
             <h2 className="text-white text-3xl lg:text-5xl font-serif">Hi, I&apos;m Joel 👋</h2>
             <p className="text-white text-2xl lg:text-3xl mt-10">
               I help .NET shops modernize their stack.
@@ -25,7 +21,7 @@ export default function Hero() {
                 📲 Contact Me
               </Link>
             </div>
-          </motion.div>
+          </div>
           <div className="grow flex flex-col justify-center">
             <Image
               priority
