@@ -52,6 +52,7 @@ body {
   color: var(--foreground);
   font-family: Marvel, Helvetica, sans-serif;
   font-weight: 400;
+  font-display: swap;
 }
 
 @layer base {
