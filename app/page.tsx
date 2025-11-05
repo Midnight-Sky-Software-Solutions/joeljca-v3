@@ -1,3 +1,4 @@
+'use cache'
 import Contact from "./contact";
 import Hero from "@/app/hero";
 import Portfolio from "./portfolio";
