@@ -10,7 +10,7 @@ import CallToAction from "./cta";
 import TheGuide from "./the-guide";
 import Ebook from "./ebook";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <Hero />
