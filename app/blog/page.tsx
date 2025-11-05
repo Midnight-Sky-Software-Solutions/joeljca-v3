@@ -1,3 +1,4 @@
+'use cache'
 import { delay } from "@/lib/harness";
 import { Posts } from "@/lib/model/wordpress";
 import { getPostsFromWordpress } from "@/lib/services/wordpress";
