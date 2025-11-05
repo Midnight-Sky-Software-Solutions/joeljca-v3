@@ -24,6 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://p.typekit.net" />
+        <link rel="preconnect" href="https://use.typekit.net" />
       </head>
       <body
         className={`${marvel.variable} ${inconsolata.variable} ${inriaSerif.variable} ${josefinSans.variable} antialiased`}
