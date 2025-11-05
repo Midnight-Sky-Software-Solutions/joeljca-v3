@@ -9,7 +9,6 @@ export default function Analytics() {
   return (
     <>
       <Script
-        async
         src="https://www.googletagmanager.com/gtag/js?id=G-G2W02313YC"
       />
       <Script strategy="afterInteractive">
