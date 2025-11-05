@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TheGuide() {
   return(
-    <div className="bg-[url(/experience.webp)] bg-center md:bg-top bg-cover bg-fixed h-60 mt-10">
+    <div className="bg-[url(/experiencem.jpg)] md:bg-[url(/experience.webp)] bg-center md:bg-top bg-cover bg-fixed h-60 mt-10">
       <div className="full-width-container bg-black/60 h-60">
         <div className="content-width-full flex flex-col justify-center">
           <ul className="text-white text-2xl font-bold sm:grid grid-cols-3">
