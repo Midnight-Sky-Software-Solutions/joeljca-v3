@@ -3,13 +3,17 @@ import { inriaSerif, inconsolata, marvel, josefinSans } from "@/ui/fonts";
 import "./globals.css";
 import Footer from "@/ui/footer";
 import NavBar from "@/ui/navbar";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import FontHack from "./font-hack";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "ASP.NET Modernization Services | Joel Johnston",
   description: "I help .NET shops modernize their stack.",
 };
+
+const Analytics = dynamic(() => import('./analytics'), {
+  // loading: () => <p>Loading...</p>,
+})
 
 export default function RootLayout({
   children,
@@ -29,7 +33,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-G2W02313YC" />
+      <Analytics />
     </html>
   );
 }
